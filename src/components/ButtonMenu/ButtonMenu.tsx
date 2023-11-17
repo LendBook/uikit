@@ -6,7 +6,7 @@ import { ButtonMenuProps, ButtonMenuItemProps } from "./types";
 const ButtonMenu: React.FC<ButtonMenuProps> = ({
   activeIndex = 0,
   size = sizes.MD,
-  variant = variants.PRIMARY,
+  variant = variants.SUCCESS,
   onClick,
   children,
 }) => {
