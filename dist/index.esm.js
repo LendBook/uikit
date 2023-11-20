@@ -628,7 +628,7 @@ var StyledButtonMenu = styled.div(templateObject_1$7 || (templateObject_1$7 = __
 var templateObject_1$7;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onClick = _a.onClick, children = _a.children;
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.SUCCESS : _d, onClick = _a.onClick, children = _a.children;
     return (React.createElement(StyledButtonMenu, { variant: variant }, Children.map(children, function (child, index) {
         return cloneElement(child, {
             isActive: activeIndex === index,
@@ -2492,7 +2492,7 @@ var AccountModal = function (_a) {
     return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React.createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React.createElement(Flex, { mb: "32px" },
-            React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
+            React.createElement(LinkExternal, { small: true, href: "https://goerli.arbiscan.io/address/" + account, mr: "16px" }, "View on ArbiScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
             React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
